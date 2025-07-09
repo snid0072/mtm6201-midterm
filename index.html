@@ -3,76 +3,76 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Karla:ital,wght@0,200..800;1,200..800&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/reset.css">
     <link rel="stylesheet" href="css/main.css">
     <title>Document</title>
 </head>
 <body>
-    <header id="top" role="banner">
-        <div class="header-container" role="navigation">
-            <ul class="skip-links">
-                <li><a href="#nav">Skip to Main Nav</a></li>
-                <li><a href="#content">Skip to Main Content</a></li>
-                <li><a href="#footer">Skip to Footer</a></li>
-            </ul>
-        </div>
-            <h1 class="header" role="heading" aria-level="1">My Coffee House</h1>
-            <img src="" class="header-image" alt="logo of coffee shop">
-            <nav class="nav-bar" id="nav" role="navigation">
-                <ul class="nav-list">
-                    <li class="nav-item">
-                        <a class="nav-link">ABOUT US</a>
-                    </li>
-                    <li class=nav-item>
-                        <a class="nav-link">MENU</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link">LOCATIONS</a>
-                    </li>
-                </ul>
-            </nav>
+    <header id="top">
+        <div class="header-content">
+            <div class="header-container">
+                <div class="branding">
+                    <img src="images/logo.png" alt="logo of coffee shop" class="header-image">
+                    <h1 class="header">My Coffee House</h1>
+                </div>
+                <nav class="nav-bar" id="nav" aria-label="Main navigation">
+                    <ul class="nav-list">
+                        <li class="nav-item"><a class="nav-link" href="#about">ABOUT US</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#menu">MENU</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#locations">LOCATIONS</a></li>
+                    </ul>
+                </nav>
+            </div>
+            <section class="hero-section">
+                <img src="images/hero-background.jpg" alt="woman making coffee" class="hero-background">
+                <div class="hero-overlay">
+                    <h2 class="hero-title">EXPERIENCE COFFEE LIKE<br>NEVER BEFORE</h2>
+                    <p class="hero-body">
+                        We craft more than beverages; we curate memories, one flavourful moment at a time.
+                        Embrace the aroma and let every visit be a chapter in your coffee story.
+                    </p>
+                    <button class="hero-button">EXPLORE OUR MENU</button>
+                </div>
+            </section>
         </div>
     </header>
 
-    <main class="main-content" id="content" role="main">
+    <main class="main-content" id="content">
         <!-- Not sure if im labelling these correct but ngl they are just for me to jump to sections easier -->
-        
-        <!-- Hero Section -->
-        <section class="hero-section">
-            <h2 class="hero-title" aria-level="2">Experience coffee like never before</h2>
-            <p class="hero-body">We craft more than beverages; we curate memories, one flavourful moment at a time. Embrace the aroma and let every visit be a chapter in your coffee story.</p>
-            <button class="hero-button">Explore Our Menu</button>
-            <img src="images/hero-background.jpg" class="hero-background" alt="woman making coffee">
-        </section>
-
         <!-- Welcome Section -->
         <section class="welcome-section">
-            <h2 class="welcome-header" aria-level="3">Welcome To My Coffee House</h2>
-            <h3 class="welcome-title">Experience a New Way To Taste Coffee</h3>
+            <h2 class="welcome-header" aria-level="3">WELCOME TO MY COFFEE HOUSE</h2>
+            <h3 class="welcome-title">EXPERIENCE A NEW WAY TO TASTE COFFEE</h3>
             <img src="images/latte.jpg" class="welcome-image-lg" alt="image of latte art">
-            <img src="images/coffee-beans.jpg" class="welcome-image-tl" alt="image of coffee beans">
-            <img src="images/pouring-coffee.jpg" class="welcome-image-tr" alt="image of coffee being poured">
-            <img src="images/three-cups.jpg" class="welcome-image-bl" alt="image of 3 coffees">
-            <img src="images/smiling-employee.jpg" class="welcome-image-br" alt="image of barista">
+            <div class="welcome-img-grid">
+                <img src="images/coffee-beans.jpg" class="welcome-image-tl" alt="image of coffee beans">
+                <img src="images/pouring-coffee.jpg" class="welcome-image-tr" alt="image of coffee being poured">
+                <img src="images/three-cups.jpg" class="welcome-image-bl" alt="image of 3 coffees">
+                <img src="images/smiling-employee.jpg" class="welcome-image-br" alt="image of barista">
+            </div>
         </section>
 
         <!-- Offer Section -->
         <section class="offer-section">
-            <h2 class="offer-header" aria-level="3">What We Offer</h2>
-            <h3 class="offer-title">Why Visit Us?</h3>
+            <h2 class="offer-header" aria-level="3">WHAT WE OFFER</h2>
+            <h3 class="offer-title">WHY VISIT US?</h3>
             <div class="offers">
                 <div class="offer-one">
-                    <img class="oo-image">
-                    <h3 class="oo-title">Fair Trade Coffee</h3>
+                    <img src="images/fair-trade.svg" class="oo-image">
+                    <h3 class="oo-title">FAIR TRADE COFFEE</h3>
                     <p class="oo-body">We build direct relationships with the farmers and producers who help in the development of delicious, sustainable and organic coffee.</p>
                 </div>
                 <div class="offer-two">
-                    <img class="otw-image">
-                    <h3 class="otw-title">Local Baked Goods</h3>
+                    <img src="images/local-baked-goods.svg" class="otw-image">
+                    <h3 class="otw-title">LOCAL BAKED GOODS</h3>
                     <p class="otw-body">We use local products to bake our goods and bring in a variety of treats from local bakers with our community.</p>
                 </div>
                 <div class="offer-three">
-                    <img class="oth-image">
-                    <h3 class="oth-title">Made With Love</h3>
+                    <img src="images/made-with-love.svg" class="oth-image">
+                    <h3 class="oth-title">MADE WITH LOVE</h3>
                     <p class="oth-body">We value our customers and make it our priority to serve everyone with respect and a friendly smile to start their day of right.</p>
                 </div>
             </div>
@@ -96,7 +96,7 @@
         <!-- About Section -->
         <section class="about-section" id="about" aria-labelledby="about-heading">
             <img src="images/about-us.jpg" class="about-image" alt="image of employees working together">
-            <h2 class="about-header" id="about-heading" role="heading" aria-level="3">About Us</h2>
+            <h2 class="about-header" id="about-heading" aria-level="3">About Us</h2>
             <h3 class="about-title">Read Our Story</h3>
             <p class="about-para-one">In the heart of our community, My Coffee House emerged as a humble local coffee shop that sought to redefine the coffee experience. Founded with a passion for quality brews and a commitment to fostering genuine connections, we embarked on this journey with a vision to create a warm and inviting space for coffee enthusiasts and casual patrons alike.</p>
             <p class="about-para-two">My Coffee House quickly became a cherished gathering spot, where the rich aroma of freshly ground coffee beans mingled with the laughter of friends and the tapping of keyboards from those seeking a cozy workspace.</p>

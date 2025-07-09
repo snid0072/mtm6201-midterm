@@ -1,3 +1,155 @@
+body {
+    font-family: 'Karla', sans-serif;
+    color: #333;
+    background-color: #f3f0e9;
+    margin: 0;
+    padding: 0;
+    scroll-behavior: smooth;
+  }  
+header {
+    position: relative;
+    height: 100vh;
+    overflow: hidden;
+}
+.hero-background {
+    width: 100vw;
+    height: 100vh;
+    object-fit: cover;
+    z-index: -1;
+}
 .nav-bar {
-    font-family: ;
+    font-family: 
+}
+
+@media (max-width: 767px) {
+    .welcome-section {
+        padding: 3rem 1rem;
+        font-family: 'Lato', sans-serif;
+    }
+
+    .welcome-header{
+        font-size: 1.2rem;
+        font-weight: bold;
+        color: #d69e3d;
+        margin-bottom: 0.5rem;
+    }
+
+    .welcome-title{
+        font-size: 1.75rem;
+        font-weight: bold;
+        color: #000000;
+        margin-bottom: 2rem;
+    }
+
+    .welcome-image-lg{
+        width: 100%;
+        max-height: 400px;
+        object-fit: cover;
+        border-radius: 8px;
+        margin-bottom: 2rem;
+        box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    }
+
+    .welcome-img-grid{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 1rem;
+    }
+    .welcome-img-grid img{
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        border-radius: 8px;
+        box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08)
+    }
+}
+
+@media (max-width: 767px) {
+    .offer-section {
+      padding: 3rem 1rem;
+      text-align: center;
+    }
+    .offer-header{
+        font-size: 1.35rem;
+        font-weight: bold;
+        color: #d69e3d;
+        margin-bottom: 0.5rem;
+    }
+
+    .offer-title{
+        font-size: 1.75rem;
+        font-weight: bold;
+        color: #000000;
+        margin-bottom: 2rem;
+    }
+
+    .offer-one h3{
+        font-size: 1.65rem;
+        font-weight: bold;
+        margin-bottom: 0.75rem;
+        color: #000000;
+        margin-bottom: 1rem;
+    }
+
+    .offer-one p{
+        font-size: 1rem;
+        line-height: 1.5;
+        margin-bottom: 0.75rem;
+        color: #000000;
+        margin-bottom: 3rem;
+    }
+
+    .offer-one img{
+        width: 160px;
+        height: 160px;
+        object-fit: cover;
+        border-radius: 8px;
+        margin-bottom: 0.5rem;
+    }
+    .offer-two h3{
+        font-size: 1.65rem;
+        font-weight: bold;
+        margin-bottom: 0.75rem;
+        color: #000000;
+        margin-bottom: 1rem;
+    }
+
+    .offer-two p{
+        font-size: 1rem;
+        line-height: 1.5;
+        margin-bottom: 0.75rem;
+        color: #000000;
+        margin-bottom: 3rem;
+    }
+
+    .offer-two img{
+        width: 160px;
+        height: 160px;
+        object-fit: cover;
+        border-radius: 8px;
+        margin-bottom: 0.5rem;
+    }
+    .offer-three h3{
+        font-size: 1.65rem;
+        font-weight: bold;
+        margin-bottom: 0.75rem;
+        color: #000000;
+        margin-bottom: 1rem
+    }
+
+    .offer-three p{
+        font-size: 1rem;
+        line-height: 1.5;
+        margin-bottom: 0.75rem;
+        color: #000000;
+        margin-bottom: 3rem;
+    }
+
+    .offer-three img{
+        width: 160px;
+        height: 160px;
+        object-fit: cover;
+        border-radius: 8px;
+        margin-bottom: 0.5rem;
+    }
 }
