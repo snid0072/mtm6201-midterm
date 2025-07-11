@@ -14,10 +14,13 @@
     <header id="top">
         <div class="header-content">
             <div class="header-container">
+                
                 <div class="branding">
-                    <img src="images/logo.png" alt="logo of coffee shop" class="header-image">
-                    <h1 class="header">My Coffee House</h1>
+                    <img src="images/my-coffee-shop-logo.svg" alt="logo of coffee shop" class="header-image" id="target-section2">
                 </div>
+                <button class="menu-toggle" aria-label="Toggle navigation">
+                    &#9776;
+                </button>
                 <nav class="nav-bar" id="nav" aria-label="Main navigation">
                     <ul class="nav-list">
                         <li class="nav-item"><a class="nav-link" href="#about">ABOUT US</a></li>
@@ -34,9 +37,10 @@
                         We craft more than beverages; we curate memories, one flavourful moment at a time.
                         Embrace the aroma and let every visit be a chapter in your coffee story.
                     </p>
-                    <button class="hero-button">EXPLORE OUR MENU</button>
+                    <button class="hero-button" onclick="document.getElementById('target-section').scrollIntoView({ behavior: 'smooth' });">EXPLORE OUR MENU</button>
                 </div>
             </section>
+            
         </div>
     </header>
 
@@ -46,12 +50,14 @@
         <section class="welcome-section">
             <h2 class="welcome-header" aria-level="3">WELCOME TO MY COFFEE HOUSE</h2>
             <h3 class="welcome-title">EXPERIENCE A NEW WAY TO TASTE COFFEE</h3>
-            <img src="images/latte.jpg" class="welcome-image-lg" alt="image of latte art">
-            <div class="welcome-img-grid">
-                <img src="images/coffee-beans.jpg" class="welcome-image-tl" alt="image of coffee beans">
-                <img src="images/pouring-coffee.jpg" class="welcome-image-tr" alt="image of coffee being poured">
-                <img src="images/three-cups.jpg" class="welcome-image-bl" alt="image of 3 coffees">
-                <img src="images/smiling-employee.jpg" class="welcome-image-br" alt="image of barista">
+            <div class="welcome-layout">
+                <img src="images/latte.jpg" class="welcome-image-lg" alt="image of latte art">
+                <div class="welcome-img-grid">
+                    <img src="images/coffee-beans.jpg" class="welcome-image-tl" alt="image of coffee beans">
+                    <img src="images/pouring-coffee.jpg" class="welcome-image-tr" alt="image of coffee being poured">
+                    <img src="images/three-cups.jpg" class="welcome-image-bl" alt="image of 3 coffees">
+                    <img src="images/smiling-employee.jpg" class="welcome-image-br" alt="image of barista">
+                </div>
             </div>
         </section>
 
@@ -60,18 +66,20 @@
             <h2 class="offer-header" aria-level="3">WHAT WE OFFER</h2>
             <h3 class="offer-title">WHY VISIT US?</h3>
             <div class="offers">
-                <div class="offer-one">
-                    <img src="images/fair-trade.svg" class="oo-image">
-                    <h3 class="oo-title">FAIR TRADE COFFEE</h3>
-                    <p class="oo-body">We build direct relationships with the farmers and producers who help in the development of delicious, sustainable and organic coffee.</p>
-                </div>
-                <div class="offer-two">
-                    <img src="images/local-baked-goods.svg" class="otw-image">
-                    <h3 class="otw-title">LOCAL BAKED GOODS</h3>
-                    <p class="otw-body">We use local products to bake our goods and bring in a variety of treats from local bakers with our community.</p>
+                <div class="grid-tablet">
+                    <div class="offer-one">
+                        <img src="images/fair-trade.svg" class="oo-image" alt="hands trading">
+                        <h3 class="oo-title">FAIR TRADE COFFEE</h3>
+                        <p class="oo-body">We build direct relationships with the farmers and producers who help in the development of delicious, sustainable and organic coffee.</p>
+                    </div>
+                    <div class="offer-two">
+                        <img src="images/local-baked-goods.svg" class="otw-image" alt="basket of food">
+                        <h3 class="otw-title">LOCAL BAKED GOODS</h3>
+                        <p class="otw-body">We use local products to bake our goods and bring in a variety of treats from local bakers with our community.</p>
+                    </div>
                 </div>
                 <div class="offer-three">
-                    <img src="images/made-with-love.svg" class="oth-image">
+                    <img src="images/made-with-love.svg" class="oth-image" alt="coffee cup">
                     <h3 class="oth-title">MADE WITH LOVE</h3>
                     <p class="oth-body">We value our customers and make it our priority to serve everyone with respect and a friendly smile to start their day of right.</p>
                 </div>
@@ -79,16 +87,16 @@
         </section>
 
         <!-- Button Section -->
-        <section class="button-section">
+        <section class="button-section" id="target-section">
             <div class="menu-section">
-                <h2 class="menu-header" aria-level="3">Our Menu</h2>
+                <h2 class="menu-header" aria-level="3" >Our Menu</h2>
                 <h3 class="menu-title">Explore What We Have To Offer You</h3>
-                <button class="menu-button">Explore Our Menu</button>
+                <button class="menu-button" onclick="document.getElementById('target-section2').scrollIntoView({ behavior: 'smooth' });">Explore Our Menu</button>
             </div>
             <div class="loca-section">
                 <h2 class="loca-header" aria-level="3">Locations</h2>
                 <h3 class="loca-title">Find Your Nearest Coffee Shop</h3>
-                <button class="loca-button">View Locations</button>
+                <button class="loca-button" onclick="document.getElementById('target-section2').scrollIntoView({ behavior: 'smooth' });">View Locations</button>
             </div>
             <img src="images/coffee-shop.jpg" class="button-background" alt="image of the inside of coffee shop">
         </section>
@@ -96,28 +104,28 @@
         <!-- About Section -->
         <section class="about-section" id="about" aria-labelledby="about-heading">
             <img src="images/about-us.jpg" class="about-image" alt="image of employees working together">
-            <h2 class="about-header" id="about-heading" aria-level="3">About Us</h2>
-            <h3 class="about-title">Read Our Story</h3>
+            <h2 class="about-header" id="about-heading" aria-level="3">ABOUT US</h2>
+            <h3 class="about-title">READ OUR STORY</h3>
             <p class="about-para-one">In the heart of our community, My Coffee House emerged as a humble local coffee shop that sought to redefine the coffee experience. Founded with a passion for quality brews and a commitment to fostering genuine connections, we embarked on this journey with a vision to create a warm and inviting space for coffee enthusiasts and casual patrons alike.</p>
             <p class="about-para-two">My Coffee House quickly became a cherished gathering spot, where the rich aroma of freshly ground coffee beans mingled with the laughter of friends and the tapping of keyboards from those seeking a cozy workspace.</p>
-            <button class="about-button">Learn More</button>
+            <button class="about-button" onclick="document.getElementById('target-section2').scrollIntoView({ behavior: 'smooth' });">Learn More</button>
         </section>
 
         <!-- Review Section -->
         <section class="review-section">
-            <h2 class="review-header" aria-level="3">Testimonials</h2>
-            <h3 class="review-title">What Our customers Say About Us</h3>
+            <h2 class="review-header" aria-level="3">TESTIMONIALS</h2>
+            <h3 class="review-title">WHAT OUR CUSTOMERS SAY ABOUT US</h3>
             <div class="reviews">
-                <div class="review-one">
-                    <img src="images/testimonial-1.jpg" class="ro-image" alt="image of Jane D.">
-                    <p class="ro-body">"I always make a point to visit My Coffee Company when in Ottawa. Delicious coffee and friendly service."</p>
-                    <h4 class="ro-name">Jane D., Toronto</h4>
-                </div>
-                <div class="review-two">
-                    <img src="images/testimonial-2.jpg" class="rtw-image" alt="image of Scott S.">
-                    <p class="rtw-body">"Great atmosphere to get some work done while enjoying a cup or two of incredible coffee."</p>
-                    <h4 class="rtw-name">Scott S., Ottawa</h4>
-                </div>
+                    <div class="review-one">
+                        <img src="images/testimonial-1.jpg" class="ro-image" alt="image of Jane D.">
+                        <p class="ro-body">"I always make a point to visit My Coffee Company when in Ottawa. Delicious coffee and friendly service."</p>
+                        <h4 class="ro-name">Jane D., Toronto</h4>
+                    </div>
+                    <div class="review-two">
+                        <img src="images/testimonial-2.jpg" class="rtw-image" alt="image of Scott S.">
+                        <p class="rtw-body">"Great atmosphere to get some work done while enjoying a cup or two of incredible coffee."</p>
+                        <h4 class="rtw-name">Scott S., Ottawa</h4>
+                    </div>
                 <div class="review-three">
                     <img src="images/testimonial-3.jpg" class="rth-image" alt="image of Susie F.">
                     <p class="rth-body">"Best coffee in the Ottawa area  and the service is top notch. Would highly recommend a visit."</p>
@@ -128,7 +136,8 @@
     </main>
     
     <footer>
-        <p>&copy; My Coffee Company 2025</p>
+        <hr>
+        <p class="footer-text">&copy; My Coffee Company 2025</p>
     </footer>
 </body>
 </html>
